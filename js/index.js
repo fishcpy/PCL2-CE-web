@@ -4,7 +4,7 @@
 const videoFrame = document.getElementById('bili-video'); 
 let isVideoLoaded = false;
 
-videoFrame.onload = function () {
+videoFrame。onload = function () {
     if (!isVideoLoaded) {
         this.contentWindow.postMessage('{"event":"command","func":"loop","args":""}', '*');
         isVideoLoaded = true;
@@ -24,7 +24,7 @@ function toggleTheme() {
 }
 
 // 动态光标效果
-document.querySelectorAll('[data-cursor-effect]').forEach(element => {
+document。querySelectorAll('[data-cursor-effect]').forEach(element => {
     element.addEventListener('mousemove', (e) => {
         const rect = element.getBoundingClientRect();
         const x = e.clientX - rect.left;

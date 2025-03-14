@@ -94,10 +94,15 @@ body {
     transform: translateY(-2px);
 }
 .btn-container {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-row {
+    display: flex;
+    gap: 1rem;
     justify-content: center;
-    gap: 1.5rem;
 }
 /* 主标题动画 */
 header {
